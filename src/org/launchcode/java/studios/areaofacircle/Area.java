@@ -15,10 +15,12 @@ public class Area {
 
       do {
          System.out.println("Please, enter the valid radius of circle:");
+
          while (!in.hasNextDouble()) {
             System.out.println("That not a number!");
             in.next();
          }
+
          radius = in.nextDouble();
       } while (radius <= 0);
       System.out.println("Thank you! Got " + radius);
